@@ -1,24 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
     <title>HTML Assignment 3</title>
     <style>
-        /* General table styling */
         table.middle {
             border: 1px solid black;
             border-collapse: collapse;
             margin: 20px auto;
         }
 
-        table.middle td {
+        table.middle td, table.middle th {
             border: 1px solid black;
             padding: 5px;
             text-align: left;
         }
 
-        /* Classes for text alignment */
         .center {
             text-align: center;
         }
@@ -27,7 +24,6 @@
             text-align: right;
         }
 
-        /* Classes for background colors */
         .green {
             background-color: green;
             color: white;
@@ -38,9 +34,14 @@
             color: white;
         }
 
-        /* Heading styling */
         h1 {
             text-align: center;
+        }
+
+        img {
+            max-width: 150px;
+            display: block;
+            margin: auto;
         }
     </style>
 </head>
@@ -49,89 +50,92 @@
     <h1>HTML Assignment #3</h1>
 
     <!-- Table 1 -->
-    <table id="table-1" class="middle">
-        <tr id="t11">
-            <td>Left</td>
-            <td class="center">Center</td>
-            <td class="right">Right</td>
+    <table class="middle" id="table-1">
+        <tr>
+            <td id="t11">Cell 1</td>
+            <td id="t12" class="center">Cell 2</td>
+            <td id="t13" class="right">Cell 3</td>
         </tr>
-        <tr id="t12">
-            <td>Left</td>
-            <td class="center">Center</td>
-            <td class="right">Right</td>
+        <tr>
+            <td>Row 2, Cell 1</td>
+            <td class="center">Row 2, Cell 2</td>
+            <td class="right">Row 2, Cell 3</td>
         </tr>
-        <tr id="t13">
-            <td>Left</td>
-            <td class="center">Center</td>
-            <td class="right">Right</td>
+        <tr>
+            <td>Row 3, Cell 1</td>
+            <td class="center">Row 3, Cell 2</td>
+            <td class="right">Row 3, Cell 3</td>
         </tr>
     </table>
 
     <!-- Table 2 -->
-    <table id="table-2" class="middle">
+    <table class="middle" id="table-2">
         <tr>
-            <td id="t21" colspan="6" class="center">Header Cell Spanning 6 Columns</td>
+            <td id="t21" colspan="6">Header Cell spanning 6 columns</td>
         </tr>
         <tr>
-            <td>Row2-Col1</td>
-            <td>Row2-Col2</td>
-            <td>Row2-Col3</td>
-            <td>Row2-Col4</td>
-            <td>Row2-Col5</td>
-            <td>Row2-Col6</td>
+            <td>Row 2, Col 1</td>
+            <td>Row 2, Col 2</td>
+            <td>Row 2, Col 3</td>
+            <td>Row 2, Col 4</td>
+            <td>Row 2, Col 5</td>
+            <td>Row 2, Col 6</td>
         </tr>
         <tr>
-            <td>Row3-Col1</td>
-            <td>Row3-Col2</td>
-            <td>Row3-Col3</td>
-            <td>Row3-Col4</td>
-            <td>Row3-Col5</td>
-            <td>Row3-Col6</td>
+            <td>Row 3, Col 1</td>
+            <td>Row 3, Col 2</td>
+            <td>Row 3, Col 3</td>
+            <td>Row 3, Col 4</td>
+            <td>Row 3, Col 5</td>
+            <td>Row 3, Col 6</td>
         </tr>
         <tr>
-            <td>Row4-Col1</td>
-            <td>Row4-Col2</td>
-            <td>Row4-Col3</td>
-            <td>Row4-Col4</td>
-            <td>Row4-Col5</td>
-            <td>Row4-Col6</td>
+            <td>Row 4, Col 1</td>
+            <td>Row 4, Col 2</td>
+            <td>Row 4, Col 3</td>
+            <td>Row 4, Col 4</td>
+            <td>Row 4, Col 5</td>
+            <td>Row 4, Col 6</td>
         </tr>
         <tr>
-            <td>Row5-Col1</td>
-            <td>Row5-Col2</td>
-            <td>Row5-Col3</td>
-            <td>Row5-Col4</td>
-            <td>Row5-Col5</td>
-            <td>Row5-Col6</td>
+            <td>Row 5, Col 1</td>
+            <td>Row 5, Col 2</td>
+            <td>Row 5, Col 3</td>
+            <td>Row 5, Col 4</td>
+            <td>Row 5, Col 5</td>
+            <td>Row 5, Col 6</td>
         </tr>
         <tr>
-            <td>Row6-Col1</td>
-            <td>Row6-Col2</td>
-            <td>Row6-Col3</td>
-            <td>Row6-Col4</td>
-            <td>Row6-Col5</td>
-            <td>Row6-Col6</td>
+            <td>Row 6, Col 1</td>
+            <td>Row 6, Col 2</td>
+            <td>Row 6, Col 3</td>
+            <td>Row 6, Col 4</td>
+            <td>Row 6, Col 5</td>
+            <td>Row 6, Col 6</td>
         </tr>
     </table>
 
     <!-- Table 3 -->
-    <table id="table-3" class="middle">
+    <table class="middle" id="table-3">
         <tr class="green">
-            <td>Green Row 1</td>
-            <td>Green Row 1</td>
-            <td>Green Row 1</td>
+            <td>Green Row 1, Cell 1</td>
+            <td>Green Row 1, Cell 2</td>
+            <td>Green Row 1, Cell 3</td>
         </tr>
         <tr>
-            <td>Row 2</td>
-            <td id="t-image"><img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2013_FallP3/Luthra%20Portfolio/images-1.jpeg" alt="Example Image"></td>
-            <td>Row 2</td>
+            <td>Row 2, Cell 1</td>
+            <td id="t-image">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg" alt="Sample Image">
+            </td>
+            <td>Row 2, Cell 3</td>
         </tr>
         <tr class="blue">
-            <td>Blue Row 3</td>
-            <td>Blue Row 3</td>
-            <td>Blue Row 3</td>
+            <td>Blue Row 3, Cell 1</td>
+            <td>Blue Row 3, Cell 2</td>
+            <td>Blue Row 3, Cell 3</td>
         </tr>
     </table>
+
 </body>
 
 </html>
